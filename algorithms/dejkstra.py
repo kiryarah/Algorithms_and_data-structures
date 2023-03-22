@@ -35,18 +35,3 @@ def dejkstra(start, end, graph):
                 visited[node] = current_node
 
     return get_path(start, end, visited), weight_visited[end]
-
-
-
-# graph = {
-#     '1': ((1, '2'), (1, '3')),
-#     '2': ((1, '1'), (1, '3'), (5, '7')),
-#     '3': ((1, '1'), (1, '2'), (3, '4')),
-#     '4': ((3, '3'), (1, '5')),
-#     '5': ((1, '4'), (3, '6')),
-#     '6': ((3, '5'), (1, '7')),
-#     '7': ((1, '6'), (5, '2')),
-# }
-# path, weight_path = dejkstra('1', '6', graph)
-# print(*path, sep=' -> ')
-# print(weight_path)

@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def get_path(start, end, visited):
 
     current_node, path = end, [end]
@@ -31,14 +32,3 @@ def bfs(start, end, graph):
                 visited[node] = current_node
 
     return get_path(start, end, visited)
-
-
-# graph = {
-#     'A': ('M', 'P'),
-#     'M': ('A', 'N'),
-#     'N': ('M', 'B'),
-#     'P': ('A', 'B'),
-#     'B': ('P', 'N')
-# }
-
-# print(*bfs('P', 'M', graph), sep=' -> ')

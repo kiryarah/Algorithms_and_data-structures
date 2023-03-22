@@ -21,6 +21,3 @@ def dfs_recursive(start, graph, visited=None):
     for vertex in graph[start] - visited:
         dfs_recursive(vertex, graph, visited)
     return visited
-
-
-# graph = {0: [1, 2, 3], 1: [0, 2], 2: [0, 1, 4], 3: [0], 4: [2]}
